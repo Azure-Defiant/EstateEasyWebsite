@@ -89,7 +89,7 @@ export default function Navbar() {
               </svg>
             </button>
             <button
-              className={`${isScrolled ? 'text-gray-800' : 'text-white'} hover:text-gray-500 transition-colors`}
+              className={`${isScrolled ? 'text-gray-800' : 'text-white'} hover:text-white-500 transition-colors`}
               aria-label="Wishlist"
             >
               <svg
