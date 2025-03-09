@@ -23,7 +23,7 @@ export default function PropertyCard({
   imageUrl,
 }: PropertyCardProps) {
   return (
-    <div className="bg-white rounded-lg shadow-lg overflow-hidden transition-transform duration-300 hover:-translate-y-1">
+    <div className="bg-white rounded-lg shadow-lg overflow-hidden">
       <div className="relative h-64">
         <Image
           src={imageUrl}

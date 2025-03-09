@@ -1,11 +1,15 @@
 import Image from "next/image";
+import Link from "next/link";
 import Navbar from "../components/common/Navbar";
-import PropertyCard from '../components/PropertyCard';
+import PropertyCard from "../components/PropertyCard";
 import WhyChooseUs from "../components/WhyChooseUs";
+import ScrollableContainer from "../components/ScrollableContainer";
+
 export default function Home() {
   return (
     <div className="min-h-screen">
       <Navbar />
+      
       {/* Hero Section */}
       <section className="relative h-screen flex items-center justify-center overflow-hidden">
         <div className="absolute inset-0 z-0">
@@ -39,8 +43,8 @@ export default function Home() {
       {/* Featured Properties Section */}
       <section className="py-20 px-4 bg-white">
         <div className="container mx-auto">
-          <h2 className="text-4xl font-light mb-12 text-center">Featured Properties</h2>
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+          <h2 className="text-gray-700 text-4xl font-light mb-12 text-center">Featured Properties</h2>
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 mb-8">
             <PropertyCard
               id="1"
               title="Modern Luxury Villa"
@@ -72,6 +76,14 @@ export default function Home() {
               imageUrl="/assets/house-3.jpg"
             />
           </div>
+          <div className="text-center">
+            <Link 
+              href="/featured"
+              className="inline-block bg-gray-900 text-white px-8 py-3 rounded-md hover:bg-gray-800 transition-colors"
+            >
+               More Featured Properties
+            </Link>
+          </div>
         </div>
       </section>
 
@@ -92,7 +104,9 @@ export default function Home() {
       <section className="py-20 px-4 bg-gray-900 text-white">
         <div className="container mx-auto text-center">
           <h2 className="text-4xl font-light mb-6">Ready to Find Your Dream Home?</h2>
-          <p className="mb-8 text-lg text-gray-300">Browse our exclusive collection of premium properties</p>
+          <p className="mb-8 text-lg text-gray-300">
+            Browse our exclusive collection of premium properties
+          </p>
           <button className="bg-white text-gray-900 px-8 py-3 text-lg font-semibold hover:bg-gray-100 transition-colors">
             View All Properties
           </button>
@@ -112,9 +126,21 @@ export default function Home() {
             </div>
             <div>
               <form className="space-y-4">
-                <input type="text" placeholder="Your Name" className="w-full p-3 border border-gray-300" />
-                <input type="email" placeholder="Your Email" className="w-full p-3 border border-gray-300" />
-                <textarea placeholder="Your Message" rows={4} className="w-full p-3 border border-gray-300"></textarea>
+                <input
+                  type="text"
+                  placeholder="Your Name"
+                  className="w-full p-3 border border-gray-300"
+                />
+                <input
+                  type="email"
+                  placeholder="Your Email"
+                  className="w-full p-3 border border-gray-300"
+                />
+                <textarea
+                  placeholder="Your Message"
+                  rows={4}
+                  className="w-full p-3 border border-gray-300"
+                ></textarea>
                 <button className="bg-gray-900 text-white px-6 py-3 hover:bg-gray-800 transition-colors">
                   Send Message
                 </button>
