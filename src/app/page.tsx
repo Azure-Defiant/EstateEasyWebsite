@@ -3,7 +3,6 @@ import Link from "next/link";
 import Navbar from "../components/common/Navbar";
 import PropertyCard from "../components/PropertyCard";
 import WhyChooseUs from "../components/WhyChooseUs";
-import ScrollableContainer from "../components/ScrollableContainer";
 
 export default function Home() {
   return (

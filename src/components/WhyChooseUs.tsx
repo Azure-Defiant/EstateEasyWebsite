@@ -4,7 +4,7 @@ export default function WhyChooseUs() {
   return (
     <section className="py-20 px-4 bg-white">
       <div className="container mx-auto max-w-6xl">
-        <h2 className="text-4xl font-light mb-16 text-center">Why Choose Estate Easy</h2>
+        <h2 className="text-gray-700 text-4xl font-light mb-16 text-center">Why Choose Estate Easy</h2>
         <div className="grid grid-cols-1 md:grid-cols-3 gap-12">
           <div className="group p-8 border border-gray-100 rounded-lg transition-all duration-300 hover:shadow-lg">
             <div className="mb-6">
